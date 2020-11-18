@@ -1,62 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 :root {
-	--main-bg-color: #f39c12;
-	--main-bg-aux-color: #e67e22;
+	--bg-color: #333333;
+	--bg-item-color: #c5c5c5;
 }
 
 * {
 	margin: 0;
 	padding: 0;
+	font-family: 'Oswald', sans-serif; 
 }
 
 body {
-	background-color: var(--main-bg-color)
+	background-color: var(--bg-color)
 }
 
-ul {
+.center {
+	display: flex;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+  transform: translate(-50%, -160%);
+}
+
+.center p {
+	font-size: 1.5pc;
+	color: white;
+	text-align: center;
+}
+
+ul {
 	display: flex;
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 ul li{
 	list-style: none;
-	width: 30px;
-	height: 30px;
-	background-color: var(--main-bg-aux-color);
+	width: 10px;
+	height: 10px;
+	background-color: var(--bg-item-color);
 	margin: 0 5px;
 	border-radius: 50%;
-	animation: animate 1.4s linear infinite;
+	animation: animate 3s ease 2s infinite;
 }
 
 ul li:nth-child(1) {
-	animation-delay: 0;
+	animation-delay: 0s;
 }
 ul li:nth-child(2) {
-	animation-delay: -1.2s;
+	animation-delay: 0.2s;
 }
 ul li:nth-child(3) {
-	animation-delay: -1s;
+	animation-delay: 0.4s;
 }
 ul li:nth-child(4) {
-	animation-delay: -0.8s;
+	animation-delay: 0.6s;
 }
 ul li:nth-child(5) {
-	animation-delay: -0.6s;
+	animation-delay: 0.8s;
+}
+ul li:nth-child(6) {
+	animation-delay: 1s;
+}
+ul li:nth-child(7) {
+	animation-delay: 1.2s;
+}
+ul li:nth-child(8) {
+	animation-delay: 1.4s;
 }
 
 @keyframes animate {
 	0% {
-		transform: translateY(0);
+		transform: scale(1);
 	}
-	60% {
-		transform: translateY(0);
+	25% {
+		transform: scale(1.5);
 	}
-	80% {
-		transform: translateY(-20px);
+	50% {
+		transform: scale(1);
 	}
 	100% {
-		transform: translateY(0);
+		transform: scale(1);
 	}
 }
