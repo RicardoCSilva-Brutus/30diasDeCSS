@@ -12,3 +12,6 @@ Para que é iniciante é um excelente exercício para melhorar seu desempenho e 
 
 ##  Desafio dia 02 - 3D Social Media Hover Animation
 [Meu codigo](https://github.com/ricardo-rzo/30diasDeCSS/tree/main/desafios/dia-02)
+
+## Desafio dia 03 - Profile Card
+[Meu codigo](https://github.com/ricardo-rzo/30diasDeCSS/tree/main/desafios/dia-03)
