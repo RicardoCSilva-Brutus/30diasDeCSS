@@ -1,0 +1,147 @@
+:root {
+	--color-base: #f2f2f2;
+	--color-fundo: #2c3a47;
+	--color-destaque: #e66767;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu', sans-serif;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+body {
+	background: url(bg.jpg) no-repeat center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.profile {
+	width: 25pc;
+	margin: 0.5pc 0;
+	display: flex;
+	flex-direction: column;
+	border-radius: 8px;
+	overflow: hidden; 
+}
+
+.card-header {
+	background: var(--color-fundo);
+	padding: 3.5pc 5pc;
+}
+
+
+.profile-photo {
+	position: relative;
+	margin: 0 auto;
+	width: 6pc;
+
+}
+.profile-photo .bg-photo {
+	width: 7pc;
+	height: 7pc;
+	background: linear-gradient(130deg, #74b9ff, #FF20BA);
+	border-radius: 50%;
+	animation: bg-gradient 1s linear infinite;
+}
+
+.profile-photo img {
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	width: 6pc;
+	height: 6pc;
+	border-radius: 50%;
+}
+
+@keyframes bg-gradient {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg)}
+}
+
+.name, .work, .media, .btn-contact {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin: 1pc auto;
+}
+
+.name {
+	color: var(--color-base);
+	font-size: 1.8pc;
+	font-weight: 600;
+}
+
+.work {
+	color: var(--color-destaque);
+	font-size: 1.3pc;
+}
+
+.media {
+	justify-content: space-between;
+	width: 80%;
+}
+
+.media a {
+	color: var(--color-base);
+	font-size: 1.3pc;
+	transition: 0.4s linear;
+}
+
+.media a:hover {
+	color: var(--color-destaque);
+}
+
+.btn-contact {
+	color: var(--color-destaque);
+	padding: 13px 0;
+	border: 2px var(--color-destaque) solid;
+	border-radius: 5px;
+	transition: 0.4s linear;
+}
+
+.btn-contact:hover {
+	color: var(--color-base);
+	background-color: var(--color-destaque);
+}
+
+.card-footer {
+	background-color: var(--color-base);
+	padding: 3.5pc 3pc;
+}
+
+.status {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 33%;
+	text-transform: uppercase;
+}
+
+.item:nth-child(2) {
+	border-style: none solid;
+	border-width: 1px;
+	border-color: #bbb;
+}
+
+.item span {
+	color: var(--color-fundo);
+	font-size: 1.8pc;
+	font-weight: 500;
+}
+
+.item p {
+	color: var(--color-destaque);
+	font-size: 0.8pc;
+}
