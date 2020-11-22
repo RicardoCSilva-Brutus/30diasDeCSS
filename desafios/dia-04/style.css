@@ -1,0 +1,132 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #1a1a1a;
+}
+
+.container {
+	width: 540px;
+	height: 400px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	position: relative;
+	filter: url(#gooey);
+}
+
+.ball {
+	width: 100px;
+	height: 100px;
+	background-color: #5fe36a;
+	position: absolute;
+}
+
+.ball1 {
+	top: 40%;
+	left: 40%;
+	opacity: 0;
+	animation: ball1 5s ease 1s infinite alternate;
+}
+
+.ball2 {
+	top: 40%;
+	left: 50%;
+	opacity: 0;
+	animation: ball2 5s ease 1s infinite alternate;
+}
+
+@keyframes ball1 {
+  0% {
+    top: 40%;
+    left: 40%;
+    opacity: 0;
+    border-radius: 10%;
+    transform: rotate(0deg) scale(0);
+  }
+  20% {
+    top: 40%;
+    left: 40%;
+    opacity: 1;
+    border-radius: 10%;
+    transform: rotate(0deg) scale(1.2);
+  }
+  30% {
+    top: 40%;
+    left: 40%;
+    opacity: 1;
+    border-radius: 10%;
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    top: 40%;
+    left: 40%;
+    opacity: 1;
+    border-radius: 50%;
+    transform: rotate(720deg) scale(1);
+  }
+  60% {
+    top: 40%;
+    left: 35%;
+    opacity: 1;
+    border-radius: 50%;
+    transform: rotate(720deg) scale(0.7);
+  }
+  70% {
+    top: 40%;
+    left: 30%;
+    opacity: 1;
+    border-radius: 50%;
+    transform: rotate(720deg) scale(0.7);
+  }
+  100% {
+    top: 40%;
+    left: 60%;
+    opacity: 1;
+    border-radius: 50%;
+    transform: rotate(720deg) scale(0.7);
+  }
+}
+
+@keyframes ball2 {
+  0%,
+  30% {
+    top: 40%;
+    left: 40%;
+    opacity: 0;
+    border-radius: 50%;
+    transform: rotate(0deg) scale(0);
+  }
+  40% {
+    top: 40%;
+    left: 40%;
+    opacity: 1;
+    border-radius: 50%;
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    top: 40%;
+    left: 45%;
+    opacity: 1;
+    border-radius: 50%;
+    transform: rotate(0deg) scale(0.7);
+  }
+  70% {
+    top: 40%;
+    left: 50%;
+    opacity: 1;
+    border-radius: 50%;
+    transform: rotate(0deg) scale(0.7);
+  }
+  100% {
+    top: 40%;
+    left: 30%;
+    opacity: 1;
+    border-radius: 50%;
+    transform: rotate(0deg) scale(0.7);
+  }
+}
