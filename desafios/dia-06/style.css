@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: monospace;
+  font-size: 2pc;
+}
+
+body {
+  background: #9890e3;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: colorBackgroud 2s ease infinite alternate;
+}
+
+.box {
+  width: 50%;
+  height: 7vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: white 4px solid;
+  border-radius: 20px;
+}
+
+@keyframes colorBackgroud {
+  from {background: #9890e3}
+  to {background: #b1f4cf}
+}
