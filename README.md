@@ -24,3 +24,6 @@ Para que é iniciante é um excelente exercício para melhorar seu desempenho e 
 
 ##  Desafio dia 06 - Background Gradiente Animado
 [Meu codigo](https://github.com/ricardo-rzo/30diasDeCSS/tree/main/desafios/dia-06)
+
+##  Desafio dia 07 - Video Inside Mockup
+[Meu codigo](https://github.com/ricardo-rzo/30diasDeCSS/tree/main/desafios/dia-07)
