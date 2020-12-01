@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #2b2b30;
+  width: 100%;  
+}
+
+.notebook {
+  width: 100%;
+  max-width: 1080px;
+  margin: 5% auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.notebook img {
+  width: 100%;
+}
+
+.notebook video {
+  position: absolute;
+  top: 7%;
+  left: 17.5%;
+  width: 67.8%;
+  height: 82.5%;
+  background: black;
+}
+
+@media only screen and (min-width:768px) {
+  .notebook {margin: 2% auto;}
+}
